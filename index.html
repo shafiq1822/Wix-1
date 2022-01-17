@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wix | Free websites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #prof {
+        position: relative;
+        z-index: 2;
+    }
+
+    #prof:after {
+        content: "";
+        display: block;
+        width: 22em;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+    }
+
+    @media only screen and (max-width:1400px) {
+        #prof:after {
+            display: none;
+        }
+    }
+
+    #line-container {
+        position: relative;
+    }
+
+    #line-container:after {
+        content: "";
+        display: block;
+        width: .5px;
+        height: 55.3em;
+        background-color: white;
+        position: absolute;
+        left: 32em;
+    }
+
+    @media only screen and (max-width:1400px) {
+        #line-container:after {
+            display: none;
+        }
+    }
+
+    #fa a {
+        fill: black;
+        padding-right: 10px;
+        size: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3" style="position: fixed; width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="wix-4.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 "> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Creation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Business
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Growth
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <p class="mt-2 d-none d-md-inline"> &nbsp; &nbsp; &nbsp; &nbsp; | </p> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                    </li> &nbsp; &nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <a href="#" class="pt-2 pe-4" style="color: black;"><svg class="_3Cu-C"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                            height="24">
+                            <path
+                                d="M4.42676427,15 L7.19778729,15 C7.069206,14.209578 7,13.3700549 7,12.5 C7,11.6299451 7.069206,10.790422 7.19778729,10 L4.42676427,10 C4.15038555,10.7819473 4,11.6234114 4,12.5 C4,13.3765886 4.15038555,14.2180527 4.42676427,15 Z M4.86504659,16 C5.7403587,17.6558985 7.21741102,18.9446239 9.0050441,19.5750165 C8.30729857,18.6953657 7.74701714,17.4572396 7.39797964,16 L4.86504659,16 Z M18.5732357,15 C18.8496144,14.2180527 19,13.3765886 19,12.5 C19,11.6234114 18.8496144,10.7819473 18.5732357,10 L15.8022127,10 C15.930794,10.790422 16,11.6299451 16,12.5 C16,13.3700549 15.930794,14.209578 15.8022127,15 L18.5732357,15 Z M18.1349534,16 L15.6020204,16 C15.2529829,17.4572396 14.6927014,18.6953657 13.9949559,19.5750165 C15.782589,18.9446239 17.2596413,17.6558985 18.1349534,16 Z M8.21230689,15 L14.7876931,15 C14.9240019,14.2216581 15,13.3811544 15,12.5 C15,11.6188456 14.9240019,10.7783419 14.7876931,10 L8.21230689,10 C8.07599807,10.7783419 8,11.6188456 8,12.5 C8,13.3811544 8.07599807,14.2216581 8.21230689,15 Z M8.42865778,16 C9.05255412,18.3998027 10.270949,20 11.5,20 C12.729051,20 13.9474459,18.3998027 14.5713422,16 L8.42865778,16 Z M4.86504659,9 L7.39797964,9 C7.74701714,7.54276045 8.30729857,6.30463431 9.0050441,5.42498347 C7.21741102,6.05537614 5.7403587,7.34410146 4.86504659,9 Z M18.1349534,9 C17.2596413,7.34410146 15.782589,6.05537614 13.9949559,5.42498347 C14.6927014,6.30463431 15.2529829,7.54276045 15.6020204,9 L18.1349534,9 Z M8.42865778,9 L14.5713422,9 C13.9474459,6.60019727 12.729051,5 11.5,5 C10.270949,5 9.05255412,6.60019727 8.42865778,9 Z M11.5,21 C6.80557963,21 3,17.1944204 3,12.5 C3,7.80557963 6.80557963,4 11.5,4 C16.1944204,4 20,7.80557963 20,12.5 C20,17.1944204 16.1944204,21 11.5,21 Z">
+                            </path></a>
+                    <button class="btn btn-outline-primary rounded-pill px-5 py-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="main py-5" style="background-image: url(bg-img.webp); background-size:cover; width:100%; height:auto;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 pt-5">
+                <h1 style="font-weight: 400; font-size: 100px;" class="text-center"><b>Create a website you're
+                        proud of</b></h1>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-md-5">
+            <div class="col-8 col-md-5 py-5 py-md-0">
+                <h5 class="text-center">Discover the platform that gives you the freedom to create, design, manage and
+                    develop your web presence exactly the way you want.</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center py-4">
+            <div class="col-md-2 col-5">
+                <button type="button" class="btn btn-primary btn-lg ms-4 ms-md-3 px-md-5 rounded-pill">Get
+                    Started</button>
+            </div>
+        </div>
+        <div class="row justify-content-center py-2">
+            <div class="col-md-12 text-center">
+                <p>Try Wix. No credit card required.</p>
+            </div>
+
+        </div>
+        <div class="row justify-content-center py-4">
+            <div class="col-md-10 px-auto">
+                <img class="px-1 px-md-0 pb-5" src="hero.webp" alt="hero" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgba(20,52,142,255); width: 100%; height: auto;">
+        <div class="container">
+            <div class="row pt-1 pt-mb-2 pb-5 align-items-center text-center pt-5 pt-lg-0 text-md-start">
+                <div class="col-md-5 mb-5">
+                    <h1 style="font-size: 50px; color: white; font-weight:600">The Freedom to Create the Websites You
+                        Want</h1>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 pt-md-5 mb-5">
+                    <h4 class="pt-md-5" style="line-height: 1.5em; color: white;">Design and build your own high-quality
+                        websites. Whether you’re promoting your business, showcasing your work, opening your store or
+                        starting a blog—you can do it all with the Wix website builder. </h4>
+                    <a href="#" style="color: white;">
+                        <h4><b> Get started - </b></h4>
+                    </a>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row text-white">
+            <div class="col-md-6" style="background-color: rgba(3,89,70,255); height: auto;">
+                <div class="row p-5">
+                    <div class="col-md-2"></div>
+                    <div class="col-12 col-md-10 mt-5 px-3 text-center text-md-start m-md-5">
+                        <h1 style="font-size: 50px; font-weight:600;">Build Your Unique Online Presence</h1>
+                        <h5 style="color: white;">To create your own website, follow these steps:</h6> <br> <br> <br>
+                            <div class="row row-cols-2">
+                                <div class="col-12 col-md-6">
+                                    <hr>
+                                    <h5><b> Customize your site </b></h5>
+                                    <p>Pick a template and customize anything, or answer a few questions and get a
+                                        free
+                                        website designed just for you.</p> <br>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <hr>
+                                    <h5><b> Add advanced features </b></h5>
+                                    <p>Start your own blog, add an online store and accept bookings online. You can
+                                        always add more features as you grow.</p> <br>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <hr>
+                                    <h5><b> Edit your mobile view </b></h5>
+                                    <p>Check out the mobile-optimized version of your site. Switch to the Mobile
+                                        Editor
+                                        to personalize it even more.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <hr>
+                                    <h5><b> Optimize for search engines </b></h5>
+                                    <p>Answer a few questions about your website, location and keywords and get a
+                                        personalized SEO plan to get found online.</p>
+                                </div>
+                            </div>
+                            <div class="row pt-md-4">
+                                <div class="col">
+                                    <a href="#" class="text-white"
+                                        style="text-decoration-thickness: 4px; line-height: 1.5em;">
+                                        <h3><b> Start Now </b></h3>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center py-5 pt-md-5"
+                style="background-color: rgba(255,255,255,255);">
+                <img class="img-fluid" src="brand.webp" alt="brand" style="width: 80%;">
+            </div>
+        </div>
+    </div>
+    </div>
+    <section>
+        <div class="container-fluid" style="background-color: rgba(244,244,244,255); height:auto;">
+            <div class="row text-center d-flex justify-content-center align-items-center pt-5 pt-lg-0">
+                <div class="col-md-6 mt-lg-5 py-lg-5">
+                    <h1 class="display-4 pt-md-5" style="font-weight: 400;"><b> Professionally Designed Website
+                            Templates </b></h1> <br>
+                    <h5>Choose from 500+ customizable website templates that are built to meet your business needs.</h5>
+                    <br>
+                    <a href="#" class="text-black" style="text-decoration-thickness: 1px;">
+                        <h4><b>See all Website Templates</b></h4>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row px-2 px-md-5 mx-md-5">
+                    <div class="col-lg-4 text-center py-3">
+                        <img src="blog.webp" alt="blog" style="width: 100%;">
+                        <h5><b> Blog </b></h5>
+                    </div>
+                    <div class="col-lg-4 text-center py-3">
+                        <img src="Business.webp" alt="business" style="width: 100%;">
+                        <h5><b> Business </b></h5>
+                    </div>
+                    <div class="col-lg-4 text-center py-3">
+                        <img src="online.webp" alt="online" style="width: 100%;">
+                        <h5><b> Online Store </b></h5>
+                    </div>
+                </div>
+                <div class="row px-2 px-md-5 mx-md-5 py-md-5">
+                    <div class="col-lg-4 text-center py-3">
+                        <img src="design.webp" alt="blog" style="width: 100%;">
+                        <h5><b> Design </b></h5>
+                    </div>
+                    <div class="col-lg-4 text-center py-3">
+                        <img src="photo.webp" alt="business" style="width: 100%;">
+                        <h5><b> Business </b></h5>
+                    </div>
+                    <div class="col-lg-4 text-center py-3 pb-5">
+                        <img src="education.webp" alt="online" style="width: 100%;">
+                        <h5><b> Education </b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row py-md-5 py-5 py-md-5 my-md-5">
+                <div class="col-lg-6 text-center text-md-end " style="height: auto;">
+                    <img class="pt-md-5" src="editor.webp" alt="" style="width: 68%;">
+                </div>
+                <div class="col-lg-5 align-items-center ps-md-5 px-5 pt-5 my-md-5">
+                    <div class="">
+                        <h2 class="ms-md-3 display-4" style="font-weight: 500;"><b> Wix Editor <br>
+                                Total Design Freedom</b></h2>
+                        <h5 class="ms-md-3">Start from scratch or choose from over 500 designer-made templates that you
+                            can
+                            fully customize using the drag and drop website builder. Make your site come to life with
+                            video
+                            backgrounds, scroll effects and animation. With the Wix Editor, you can create your own
+                            professional website exactly the way you want it.</h5> <br>
+                        <a href="#" style="color: black;">
+                            <h3 class="ms-md-3"><b>Get Started</b></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-md-5 pb-3 mb-md-5">
+            <div class="row px-md-5">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 px-5 px-md-0">
+                    <h1 class="display-5" style="font-weight: 500;"><b>Wix ADI <br>
+                            Get Online Fast</b></h1> <br>
+                    <h5 style="line-height: 1.6em;" class="col-11">Answer a few simple questions and Wix ADI (Artificial
+                        Design Intelligence) will instantly build a personalized website just for you, complete with
+                        custom text and images. Choose your style, change the layout and add any features you need for
+                        your business, like an online store or booking system. When you’re ready, go live in a click.
+                    </h5> <br>
+                    <a href="#" class="text-black">
+                        <h3><b> Get Started</b></h3>
+                    </a> <br> <br>
+                    <img src="adi.webp" class="img-fluid" alt="adi" style="width: 95%;">
+                </div>
+                <div class="col-md-6 px-5  py-5 py-md-0 ">
+                    <h1 class="display-5" style="font-weight: 500;"><b>Velo by Wix <br>
+                            Open Dev Platform</b></h1> <br>
+                    <h5 style="line-height: 1.6em;" class="col-11 ">Build professional web applications with serverless
+                        computing and hassle-free coding. Manage all your content from integrated databases, add your
+                        own code in the built-in IDE or work in your own environment, and connect to 100s of APIs. Plus,
+                        you get total design freedom from the Wix Editor and optimized business applications.</h5> <br>
+                    <a href="#" class="text-black">
+                        <h3><b> Get Started</b></h3>
+                    </a> <br> <br>
+                    <img src="ide.webp" class="img-fluid " alt="ide" style="width: 94%;">
+                </div>
+            </div>
+            <div class="row px-md-4 pb-md-5 mb-md-5 pt-5">
+                <div class="col-md-1 "></div>
+                <div class="col-md-11 px-5 px-md-0 pt-md-5">
+                    <h4 id="prof" class="ps-md-4 me-md-5 pe-md-5"><b>Get Professional Features for Your Website </b>
+                    </h4> <br> <br>
+                    <h1 class="ps-md-4 me-md-5 pe-md-5 col-12 col-md-7 display-6"><b> Make your own website and get
+                            built-in tools to grow your business online. </b></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 "></div>
+                <div class="col-lg-5"> 
+                    <img src="store.webp" alt="" class="ps-4 ps-md-4" style="width: 100%;"> <br>
+                    <h4 class="ps-4 ps-md-4 me-md-5 pt-3"><b> Online Store </b></h4>
+                    <p class="ps-4 ps-md-4 me-md-5 pt-3 col-10 col-lg-7">Start selling online and grow your business
+                        with a powerful eCommerce platform.</p>
+                    <a href="#" class="ps-4 ps-md-4 pt-3">
+                        Create an Online Store
+                    </a> &nbsp; | &nbsp;
+                    <a href="#">
+                        Learn How
+                    </a>
+                </div>
+                <div class="col-lg-5 ps-md-5 ms-lg-5"> <br> <br> <br>
+                    <img src="bookings.webp" alt="" class="px-4 ps-md-0 pt-md-5 mt-md-5" style="width: 100%;"> <br> <br>
+                    <h4 class="ps-4 ps-md-0 me-md-5 pt-3"><b>Online Scheduling Software</b></h4>
+                    <p class="ps-4 ps-md-0 me-md-5 pt-3 col-10 col-lg-7">Let clients book appointments or services and
+                        pay online.</p>
+                    <a href="#" class="ps-4 ps-md-0 pt-3">
+                        Discover Wix Bookings
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 "></div>
+                <div class="col-lg-5"> <br> <br> <br>
+                    <img src="blog-1.webp" alt="" class="ps-4 " style="width: 100%;"> <br>
+                    <h4 class="ps-4 ps-md-5 me-md-5 pt-3"><b> Professional Blog </b></h4>
+                    <p class="ps-4 ps-md-5 me-md-5 pt-3 col-10 col-lg-8">Create a blog with built-in features to grow
+                        your reach and build a community.</p>
+                    <a href="#" class="ps-4 ps-md-5 pt-3">
+                        Create a free Blog
+                    </a> &nbsp; | &nbsp;
+                    <a href="#">
+                        Learn How
+                    </a>
+                </div>
+                <div class="col-lg-5 ps-md-5 ms-lg-5"> <br> <br> <br>
+                    <img src="logo-1.webp" alt="" class="ps-5 ps-md-0 pt-md-5 mt-md-5" style="width: 90%;"> <br> <br>
+                    <h4 class="ps-4 ps-md-0 me-md-5 pt-3"><b>Logo Maker</b></h4>
+                    <p class="ps-4 ps-md-0 me-md-5 pt-3 col-10 col-lg-7">Design your own professional logo and build
+                        your brand online.</p>
+                    <a href="#" class="ps-4 ps-md-0 pt-3">
+                        Try a Wix Logo Maker
+                    </a>
+                </div>
+            </div>
+            <div class="row pb-md-5 mb-md-5">
+                <div class="col-md-1 "></div>
+                <div class="col-lg-5"> <br> <br> <br>
+                    <img src="domain.webp" alt="" class="ps-4 ps-md-5" style="width: 90%;"> <br> <br>.
+                    <h4 class="ps-4 ps-md-5 me-md-5 pt-3"><b> Custom Domains </b></h4>
+                    <p class="ps-4 ps-md-5 me-md-5 pt-3 col-10 col-lg-9">Get a professional domain name that matches
+                        your business and brand.</p>
+                    <a href="#" class="ps-4 ps-md-5 pt-3">
+                        Get Custom Domain Names
+                    </a>
+                </div>
+                <div class="col-lg-5 ps-md-5 ms-lg-5 pb-5 pb-md-0"> <br> <br> <br>
+                    <img src="seo.webp" alt="" class="px-4 ps-md-0 pt-md-5 mt-md-5" style="width: 90%;"> <br> <br>
+                    <h4 class="ps-4 ps-md-0 me-md- pt-3"><b>SEO Tools</b></h4>
+                    <p class="ps-4 ps-md-0 me-md-5 pt-3 col-10 col-lg-8">Improve your visibility on search engines with
+                        a full range of SEO features.</p>
+                    <a href="#" class="ps-4 ps-md-0 pt-3">
+                        Find Out More
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="manage.webp" alt="manage" style="width: 100%;">
+            </div>
+            <div class="col-md-5 ms-md-5 pt-5 pt ps-5 d-flex flex-column justify-content-center">
+                <h1 class="col-9 display-5" style="font-weight: 400;"><b> Manage, Promote and Grow Your Business Online
+                    </b></h1> <br>
+                <h5 class="col-9 pt-4" style="line-height: 1.6em;">Create a website with the Wix website builder and use
+                    the built-in professional business suite to promote and manage your business—all in one place.
+                    Generate leads and drive conversions with Email Marketing, Facebook Ads, Landing Pages and customer
+                    management tools. Then track your success and make data-driven decisions on how to improve with Wix
+                    Analytics.</h5>
+                <a href="#" class=" ps-md-0 pt-3 mb-md-5 text-black">
+                    <h3> <b>
+                            Get Started </b> </h3> <br> <br>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="row pb-5" style="background-color: rgba(20,52,142,255); width:100%; height:auto;">
+            <div class="col-12 text-center pt-5 text-light px-4 px-lg-0">
+                <h1 class="pt-2 display-5" style="font-weight: 600; font-size: 55px;">How to Create a Free Website</h1>
+                <br>
+                <h5>Follow these 6 simple steps to create a website today.</h5>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 ps-md-4" style="font-weight: 400;"> <br> <br>
+                        <ol class="text-start" style="line-height: 2.2em; font-size:17px;">
+                            <li><b> Sign up for a free website builder.</b> Choose what kind of website you want to
+                                create.</li>
+                            <li>
+
+                                <b> Customize a template or get a website made for you.</b> Choose your starting point.
+                            </li>
+                            <li>
+                                <b> Drag and drop 100s of design features.</b> Add text, galleries, videos, vector art
+                                and more.
+                            </li>
+                            <li>
+
+                                <b> Get ready for business.</b> Add an online store, booking system, members area and
+                                blog.
+                            </li>
+                            <li>
+
+                                <b> Publish your website and go live.</b> Start building your professional online
+                                presence.
+                            </li>
+                            <li>
+                                <b> Drive traffic to your site.</b> Use advanced SEO tools and integrated marketing
+                                solutions.
+                            </li>
+                        </ol> <br> <br>
+                        <div class="d-md-flex text-start text-md-center ps-4 justify-content-evenly pb-5">
+                            <a href="#" class="text-light">
+                                <h3><b> Get Started </b></h4>
+                            </a>
+                            <a href="#" class="text-light">
+                                <h3><b> Learn How To Create a Website </b></h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row py-5 my-5 ps-md-5 ms-md-5 px-5 ps-5">
+                <div class="col-md-5">
+                    <h1 class="col-md-9 mt-md-5 display-5" style="font-weight: 400;"><b>Why the Wix Website Builder Is
+                            the Best Choice for You</b></h1>
+                </div>
+                <div class="col-md-5 mt-md-5 pb-md-5 mb-md-22">
+                    <h5 style="line-height: 1.3em;">With 85% of consumers searching online before making a purchase,
+                        it’s never been more important for your business to have a website. <br> <br>
+
+
+
+                        Create a free and professional website using Wix. With over 500 customizable, eye-catching
+                        templates, free reliable web hosting, powerful SEO tools and 24/7 customer care, Wix is more
+                        than just a website builder, it’s a complete online business solution. <br> <br>
+
+
+
+                        Sell your products with built-in ecommerce features, and take bookings for your services. Use
+                        the integrated marketing and customer management tools to help drive sales and conversions. <br>
+                        <br>
+
+
+
+                        Over 180 million people worldwide have chosen Wix to create a free website. And you can do it,
+                        too.
+                    </h5> <br>
+                    <a href="#" class=" ps-md-0 pt-3 mb-md-5 text-black">
+                        <h3> <b>
+                                Get Started </b> </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="line-container" class="row bg-black text-light">
+            <div class=" col-md-5 p-md-5 my-md-5 d-flex flex-column justify-content-center">
+                <h1 class=" display-4 p-5" style="font-weight: 600;">Spark Your Creativity</h1>
+                <h5 class="px-5 col-md-10">follow the latest trends, improve your skills with how-tos and get inspired
+                    by case
+                    studies on the Wix Blog.</h5> <br> <br> <br> <br>
+                <a href="#" class="text-light p-5">
+                    <h3 class=""> <b>
+                            Explore The Blog </b> </h3>
+                </a>
+                <div id="line" class=" d-inline"></div>
+            </div>
+            <div class="col-md-7 py-5 my-md-5 text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <img class="py-md-4 img-fluid" src="An online store for designer sunglasses_.webp" alt=""
+                            style="width: 21em;">
+                        <h6 class=" col-md-9" style="font-size: 17px; line-height:1.4em;">How to Create a Beautiful
+                            One-Page Website</h6> <br> <br>
+                        <img class="py-md-4 img-fluid" src="How to Create an Authentic Brand Identit.webp" alt=""
+                            style="width: 21em;">
+                        <h6 class="col-md-9" style="font-size: 17px; line-height:1.4em;">How to Create an Authentic
+                            Brand Identity</h6>
+                    </div>
+                    <div class="col-md-5 pt-5 pt-md-0">
+                        <img class="py-md-4 img-fluid" src="Best Portfolio Websites to Fuel Your Ins.webp" alt=""
+                            style="width: 21em;">
+                        <h6 class=" col-md-9" style="font-size: 17px; line-height:1.4em;">How to Create a Beautiful
+                            One-Page Website</h6> <br> <br>
+                        <img class="py-md-4 img-fluid" src="10 Web Design Trends to Look Out For in 2022_desktop.webp"
+                            alt="" style="width: 21em;">
+                        <h6 class="col-md-9" style="font-size: 17px; line-height:1.4em;">How to Create an Authentic
+                            Brand
+                            Identity</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row px-3 p-md-5 pb-4">
+                <div class="col-md-12 p-md-5 pb-0"> <br> <br>
+                    <h1><b> FAQ </b></h1> <br>
+                    <hr> <br>
+                    <div class="row">
+                        <div class="col-md-7 ">
+                            <h5 style="font-weight: 600;">1. &nbsp; &nbsp; &nbsp; &nbsp; Is it easy to build a website?
+                            </h5>
+                        </div>
+                        <div class="col-md-5 ">
+                            <p>Yes. Wix offers a few different ways to create your own free website, so you can choose
+                                the
+                                creation process that works best for you. Need to get online fast? Answer a few simple
+                                questions and Wix ADI (Artificial Design Intelligence) will build a professional website
+                                for
+                                you in under 10 minutes. If you want 100% design freedom, start from scratch and drag
+                                and
+                                drop the website design features you need in the Wix Editor.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-7 ">
+                            <h5 style="font-weight: 600;">1. &nbsp; &nbsp; &nbsp; &nbsp; Is it easy to build a website?
+                            </h5>
+                        </div>
+
+                        <div class="col-md-5 ">
+                            <p>Yes. Wix offers a few different ways to create your own free website, so you can choose
+                                the
+                                creation process that works best for you. Need to get online fast? Answer a few simple
+                                questions and Wix ADI (Artificial Design Intelligence) will build a professional website
+                                for
+                                you in under 10 minutes. If you want 100% design freedom, start from scratch and drag
+                                and
+                                drop the website design features you need in the Wix Editor.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <h5 style="font-weight: 600;">1. &nbsp; &nbsp; &nbsp; &nbsp; Is it easy to build a website?
+                            </h5>
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-5 ">
+                            <p>Yes. Wix offers a few different ways to create your own free website, so you can choose
+                                the
+                                creation process that works best for you. Need to get online fast? Answer a few simple
+                                questions and Wix ADI (Artificial Design Intelligence) will build a professional website
+                                for
+                                you in under 10 minutes. If you want 100% design freedom, start from scratch and drag
+                                and
+                                drop the website design features you need in the Wix Editor.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <h5 style="font-weight: 600;">1. &nbsp; &nbsp; &nbsp; &nbsp; Is it easy to build a website?
+                            </h5>
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-5 ">
+                            <p>Yes. Wix offers a few different ways to create your own free website, so you can choose
+                                the
+                                creation process that works best for you. Need to get online fast? Answer a few simple
+                                questions and Wix ADI (Artificial Design Intelligence) will build a professional website
+                                for
+                                you in under 10 minutes. If you want 100% design freedom, start from scratch and drag
+                                and
+                                drop the website design features you need in the Wix Editor.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <h5 style="font-weight: 600;">1. &nbsp; &nbsp; &nbsp; &nbsp; Is it easy to build a website?
+                            </h5>
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-5 ">
+                            <p>Yes. Wix offers a few different ways to create your own free website, so you can choose
+                                the
+                                creation process that works best for you. Need to get online fast? Answer a few simple
+                                questions and Wix ADI (Artificial Design Intelligence) will build a professional website
+                                for
+                                you in under 10 minutes. If you want 100% design freedom, start from scratch and drag
+                                and
+                                drop the website design features you need in the Wix Editor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center py-4">
+            <p class="pt-3">This website was designed with <b>Wix</b></p> <br>
+            <hr>
+        </div>
+        <div class="container ps-4 ps-md-5 pb-5">
+            <div class="row ps-md-5 pb-5">
+                <div class="col-12 d-none d-md-inline col-md-8">
+                    <table style="width: 100%; line-height:2.4em; font-size:14px;">
+                        <tbody>
+                            <tr style="height: 49.4px;">
+                                <th style="width: 24.6899%; height: 49.4px;">PRODUCT</th>
+                                <th style="width: 26.3101%; height: 49.4px;">COMPANY</th>
+                                <th style="width: 23%; height: 49.4px;">COMMUNITY</th>
+                                <th style="width: 27%; height: 49.4px;">SUPPORT</th>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Templates</td>
+                                <td style="width: 26.3101%; height: 22px;">About Wix</td>
+                                <td style="width: 23%; height: 22px;">Wix Blog</td>
+                                <td style="width: 27%; height: 22px;">Support Center</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Explore</td>
+                                <td style="width: 26.3101%; height: 22px;">Press Room</td>
+                                <td style="width: 23%; height: 22px;">Wix Marketplace</td>
+                                <td style="width: 27%; height: 22px;">Getting Started Guide</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Features</td>
+                                <td style="width: 26.3101%; height: 22px;">Investor Relations&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">Student Website&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">Status Page</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Website Builder</td>
+                                <td style="width: 26.3101%; height: 22px;">Wix Jobs</td>
+                                <td style="width: 23%; height: 22px;">Wix Encylopedia</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Web Accessibility</td>
+                                <td style="width: 26.3101%; height: 22px;">Design Assets</td>
+                                <td style="width: 23%; height: 22px;">Partner Community&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Velo</td>
+                                <td style="width: 26.3101%; height: 22px;">Terms of Use</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Wix playground</td>
+                                <td style="width: 26.3101%; height: 22px;">App Market Terms</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">My Sites</td>
+                                <td style="width: 26.3101%; height: 22px;">Privacy Policy</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Premium Plans</td>
+                                <td style="width: 26.3101%; height: 22px;">Privacy and Security Hub</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Wix SEo</td>
+                                <td style="width: 26.3101%; height: 22px;">Accessibility Statement</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Logo Maker</td>
+                                <td style="width: 26.3101%; height: 22px;">Abuse</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Create a Blog</td>
+                                <td style="width: 26.3101%; height: 22px;">Affiliates</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Online Store</td>
+                                <td style="width: 26.3101%; height: 22px;">Wix Capital</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Wix Bookings</td>
+                                <td style="width: 26.3101%; height: 22px;">Updates &amp; Releases</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Restaurants</td>
+                                <td style="width: 26.3101%; height: 22px;">Contact Us</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">App Market</td>
+                                <td style="width: 26.3101%; height: 22px;">Patent Notice</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Domains</td>
+                                <td style="width: 26.3101%; height: 22px;">Sitemap</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Business Email</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Web Hosting</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">CX Software</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Developers</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Enterprise</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Email Marketing</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Website Design</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 22px;">
+                                <td style="width: 24.6899%; height: 22px;">Professional Tools</td>
+                                <td style="width: 26.3101%; height: 22px;">&nbsp;</td>
+                                <td style="width: 23%; height: 22px;">&nbsp;</td>
+                                <td style="width: 27%; height: 22px;">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="fa" class="col-md-4 py-3">
+                    <img src="wix-4.png" alt="logo">
+                    <p class="col-md-8 pt-4" style="font-size: 14px; line-height: 1.8em;">Wix.com is a leading
+                        cloud-based development platform with millions of users worldwide. We make it easy for everyone
+                        to create a beautiful, professional web presence. <br>
+
+                        Promote your business, showcase your art, set up an online shop or just test out new ideas. The
+                        Wix website builder has everything you need to create a fully personalized, high-quality free
+                        website. <br>
+
+                        © 2006-2022 Wix.com, Inc</p>
+                    <a href="https://www.facebook.com/wix/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/wix" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/c/Wix" target="blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/wixcom/" target="blank"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.pinterest.com/wixcom/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a
+                        href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFiP6Vy0sD74gAAAX5m3B8oo3u5FEOjiuSel-iVDVz_Y8tjHO70abX8rk393aaz6-927aBD_MdoYFtBzpbPGB-PgfZJvnrlXur1ShJ0-_C-9XhO4mVvBsmtIINENzHFyEExEXA=&originalReferer=https://www.wix.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fwix-com%3Ftrk%3Dbiz-companies-cym"><i
+                            class="fab fa-linkedin-in" target="blank"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
